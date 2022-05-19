@@ -1,18 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Game from "./components/Game"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Tetris
-        </p>
-
-      </header>
+      <h1>Tetris</h1>
+      <Game rows ={20} columns = {10}/>
     </div>
   );
 }
 
-export default App;
